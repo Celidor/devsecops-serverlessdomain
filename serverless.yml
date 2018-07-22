@@ -21,7 +21,7 @@ plugins:
 custom:
   customDomain:
     domainName: time.celidor.uk
-    basePath: ping
+    basePath: api
     stage: dev
     createRoute53Record: true
     endpointType: 'regional'
