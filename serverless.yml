@@ -21,7 +21,7 @@ plugins:
 custom:
   customDomain:
     domainName: time.celidor.uk
-    certificateName: *.celidor.uk
-    basePath: ''
+    basePath: ping
     stage: ${self.provider.stage}
     createRoute53Record: true
+    endpointType: 'regional'
