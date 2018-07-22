@@ -5,7 +5,7 @@ frameworkVersion: ">=1.2.0 <2.0.0"
 provider:
   name: aws
   runtime: python2.7
-  region: eu-west-1
+  region: us-east-1
 
 functions:
   currentTime:
@@ -21,6 +21,7 @@ plugins:
 custom:
   customDomain:
     domainName: time.celidor.uk
-    basePath: ping
+    certificateName: *.celidor.uk
+    basePath: ''
+    stage: ${self.provider.stage}
     createRoute53Record: true
-    endpointType: 'regional'
